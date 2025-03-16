@@ -335,15 +335,16 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office\ 1.jpg);
+      url(../images/people-office-1x.jpg);
   }
 
   .hero-title {
     margin-bottom: 48px;
   }
 }
-@media screen and (min-width: 1158px) and (min-resolution: 2x),
-  (-webkit-min-device-pixel-ratio: 2x) {
+@media screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  screen and (min-width: 1158px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -892,6 +893,7 @@ img {
 
 .button {
   position: absolute;
+  margin: auto 0;
   border-radius: 50%;
   background-color: rgb(231, 233, 252);
   border: 1px solid rgba(0, 0, 0, 0.1);
